@@ -62,7 +62,7 @@ namespace ServiceReservasi
             try
             {
                 string sql = "insert into dbo.Pemesanan values ('" + IDPemesanan + "', '" + NamaCustomer + "', '" + NoTelpon + "', " + JumlahPemesanan + ", '" + IDLokasi + "')";
-                connection = new SqlConnection(constring); //fungsi koneksi ke db
+                connection = new SqlConnection(constring); //fungsi koneksike db
                 com = new SqlCommand(sql, connection);
                 connection.Open();
                 com.ExecuteNonQuery();
