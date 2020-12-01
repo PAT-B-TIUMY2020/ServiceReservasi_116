@@ -64,15 +64,14 @@ namespace ServiceReservasi
     {
         [DataMember]
         public string IDPemesanan { get; set; }
-
         [DataMember]
-        public string NamaCustomer { get; set; }
+        public string NamaCustomer { get; set; } //method
         [DataMember]
         public string NoTelpon { get; set; }
         [DataMember]
         public int JumlahPemesanan { get; set; }
         [DataMember]
-        public string IDLokasi { get; set; }
+        public string Lokasi { get; set; }
     }
 
     public class CompositeType
